@@ -343,235 +343,61 @@ function initMap() {
     //taxi on transit
     addMarker({
         coords: { lat: -1.284319, lng: 36.8238173 },
-        iconImage: taxi_transit,
-        content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
+        iconImage: taxi_incident,
+        content: `<p class="d-none">inactive|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
-        <div class="card-body p-0 mb-2">
-               <div class="d-flex">
-             
-               <div class="flex-shrink-0 align-self-center me-3">
-                   <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
-               </div>
-               
-               <div class="flex-grow-1 overflow-hidden pe-5">
-                   <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   Kelvin Kinoti
-                    <div class="rating-star">
-                            <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                        </div>
-                   </h5>
-                   <p class="text-truncate mb-0 text-uppercase">Lawrence Rise</p>
-               </div>
-
-               <div class="font-size-11 text-right">
-                    <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
-                    <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
-               </div>
-               </div>
-        </div>
-
-        <div class="card-body bg-light p-1>                
-            <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-        </div>
-
-        <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-square font-size-18 text-black"></i>
-                    </div>
-                    <div class="d-flex">
-                        
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Base Location
-                        </span>
-                            <div>
-                            90 Degrees by TSAVO, Nairobi, Kenya
+            <div class="card-body p-0 mb-2">
+                   <div class="d-flex">
+                 
+                   <div class="flex-shrink-0 align-self-center me-3">
+                       <img src="assets/images/users/avatar-5.jpg" class="rounded-circle avatar-xs" alt="">
+                   </div>
+                   
+                   <div class="flex-grow-1 overflow-hidden pe-5">
+                       <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
+                       Alex Wanjala
+                        <div class="rating-star">
+                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                    </div>
-                    <div class="d-flex">
-                       
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Destination
-                        </span>
-                            <div>
-                            Tulip House, Mombasa Road, Nairobi, Kenya
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+                       </h5>
+                       <p class="text-truncate mb-0 text-uppercase">The Lawrence Rise</p>
+                   </div>
+
+                   <div class="font-size-11 text-right">
+                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-danger align-middle me-1"></i> Inactive</p>
+                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last seen at 12:23 AM</p>
+                   </div>
+                   </div>
+            </div>
+
+            <div class="card-body bg-light d-flex p-1>  
+                <p class="mb-0">  
+                    <i class="mdi mdi-map-marker text-danger align-middle me-1 font-18px"></i>             
+                </p>
+            <div>
+            <p class="text-muted mb-0">Current Location</p>                         
+            <p class="mb-0">                        
+                <span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya
+            </p>
+           </div>
+            </div>
+
+           
         </div>
-    </div>
-       
-        `
+           
+            `
     });
 
 
-    //taxi on transit
-    addMarker({
-        coords: { lat: -1.29899, lng: 36.9187 },
-        iconImage: taxi_transit,
-        content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-        <div class="card-body p-0 mb-2">
-               <div class="d-flex">
-             
-               <div class="flex-shrink-0 align-self-center me-3">
-                   <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
-               </div>
-               
-               <div class="flex-grow-1 overflow-hidden pe-5">
-                   <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   Kelvin Kinoti
-                    <div class="rating-star">
-                            <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                        </div>
-                   </h5>
-                   <p class="text-truncate mb-0 text-uppercase">Cleo House</p>
-               </div>
-
-               <div class="font-size-11 text-right">
-                    <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
-                    <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
-               </div>
-               </div>
-        </div>
-
-        <div class="card-body bg-light p-1>                
-            <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-        </div>
-
-        <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-square font-size-18 text-black"></i>
-                    </div>
-                    <div class="d-flex">
-                        
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Base Location
-                        </span>
-                            <div>
-                            90 Degrees by TSAVO, Nairobi, Kenya
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                    </div>
-                    <div class="d-flex">
-                       
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Destination
-                        </span>
-                            <div>
-                            Tulip House, Mombasa Road, Nairobi, Kenya
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-       
-        `
-    });
-
-    //Taxi ontransit
-    addMarker({
-        coords: { lat: -1.27199, lng: 36.8187 },
-        iconImage: taxi_transit,
-        content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-        <div class="card-body p-0 mb-2">
-               <div class="d-flex">
-             
-               <div class="flex-shrink-0 align-self-center me-3">
-                   <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-xs" alt="">
-               </div>
-               
-               <div class="flex-grow-1 overflow-hidden pe-5">
-                   <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                   Kelvin Kinoti
-                    <div class="rating-star">
-                            <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                        </div>
-                   </h5>
-                   <p class="text-truncate mb-0 text-uppercase">Dan Deal Stores</p>
-               </div>
-
-               <div class="font-size-11 text-right">
-                    <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
-                    <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
-               </div>
-               </div>
-        </div>
-
-        <div class="card-body bg-light p-1>                
-            <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-        </div>
-
-        <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-square font-size-18 text-black"></i>
-                    </div>
-                    <div class="d-flex">
-                        
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Base Location
-                        </span>
-                            <div>
-                            90 Degrees by TSAVO, Nairobi, Kenya
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                    </div>
-                    <div class="d-flex">
-                       
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Destination
-                        </span>
-                            <div>
-                            Tulip House, Mombasa Road, Nairobi, Kenya
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-       
-        `
-    });
+    
+    
 
     //Booked Taxi
 
     addMarker({
         coords: { lat: -1.26199, lng: 36.8987 },
         iconImage: taxi_booked,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
+        content: `<p class="d-none">active|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
@@ -600,43 +426,6 @@ function initMap() {
             <div class="card-body bg-light p-1>                
                 <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
             </div>
-
-            <div class="card-body">
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Base Location
-                            </span>
-                                <div>
-                                90 Degrees by TSAVO, Nairobi, Kenya
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Destination
-                            </span>
-                                <div>
-                                Tulip House, Mombasa Road, Nairobi, Kenya
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
         </div>
            
             `
@@ -645,8 +434,8 @@ function initMap() {
     //Taxi on transit
     addMarker({
         coords: { lat: -1.29889, lng: 36.8186003 },
-        iconImage: taxi_transit,
-        content: `<p class="d-none">approved|identifier</p><h6 class="d-flex align-items-center">
+        iconImage: taxi_offline,
+        content: `<p class="d-none">offline|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
         <div class="card-body p-0 mb-2">
                <div class="d-flex">
@@ -666,51 +455,15 @@ function initMap() {
                </div>
 
                <div class="font-size-11 text-right">
-                    <p class="text-muted mb-2"><i class="mdi mdi-circle text-warning align-middle me-1"></i> On Transit</p>
+                    <p class="text-muted mb-2"><i class="mdi mdi-circle text-grey align-middle me-1"></i> Driver is ofline</p>
                     <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 36 Min</p>
                </div>
                </div>
         </div>
 
-        <div class="card-body bg-light p-1>                
+        <div class="card-body bg-light p-1>  
+         <p class="text-muted mb-0 pb-0">Last recorded location</p>              
             <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-warning align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
-        </div>
-
-        <div class="card-body">
-            <ul class="verti-timeline list-unstyled">        
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-square font-size-18 text-black"></i>
-                    </div>
-                    <div class="d-flex">
-                        
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Base Location
-                        </span>
-                            <div>
-                            90 Degrees by TSAVO, Nairobi, Kenya
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="event-list">
-                    <div class="event-timeline-dot">
-                        <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                    </div>
-                    <div class="d-flex">
-                       
-                        <div class="flex-grow-1">
-                        <span class="text-muted">
-                         Destination
-                        </span>
-                            <div>
-                            Tulip House, Mombasa Road, Nairobi, Kenya
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
         </div>
     </div>
        
@@ -750,7 +503,7 @@ function initMap() {
     addMarker({
         coords: { lat: -1.2974586, lng: 36.8087993 },
         iconImage: taxi_incident,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
+        content: `<p class="d-none">inactive|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
@@ -781,7 +534,7 @@ function initMap() {
                     <i class="mdi mdi-map-marker text-danger align-middle me-1 font-18px"></i>             
                 </p>
             <div>
-            <p class="text-muted mb-0">Reported at</p>                         
+            <p class="text-muted mb-0">Current Location</p>                         
             <p class="mb-0">                        
                 <span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya
             </p>
@@ -814,7 +567,7 @@ function initMap() {
     addMarker({
         coords: { lat: -1.2925606, lng: 36.7809636 },
         iconImage: taxi_booked,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
+        content: `<p class="d-none">active|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
@@ -844,42 +597,6 @@ function initMap() {
                 <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
             </div>
 
-            <div class="card-body">
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Base Location
-                            </span>
-                                <div>
-                                90 Degrees by TSAVO, Nairobi, Kenya
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Destination
-                            </span>
-                                <div>
-                                Tulip House, Mombasa Road, Nairobi, Kenya
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
         </div>
            
             `
@@ -891,7 +608,7 @@ function initMap() {
     addMarker({
         coords: { lat: -1.2924789, lng: 36.8243687 },
         iconImage: taxi_booked,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
+        content: `<p class="d-none">active|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
@@ -920,43 +637,6 @@ function initMap() {
             <div class="card-body bg-light p-1>                
                 <p class="text-muted mb-0"><i class="mdi mdi-map-marker text-success align-middle me-1 font-18px"></i><span class="the-clicked-address">Unknown Location</span> </p>
             </div>
-
-            <div class="card-body">
-                <ul class="verti-timeline list-unstyled">        
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-square font-size-18 text-black"></i>
-                        </div>
-                        <div class="d-flex">
-                            
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Base Location
-                            </span>
-                                <div>
-                                90 Degrees by TSAVO, Nairobi, Kenya
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="event-list">
-                        <div class="event-timeline-dot">
-                            <i class="mdi mdi-circle font-size-18 text-primary"></i>
-                        </div>
-                        <div class="d-flex">
-                           
-                            <div class="flex-grow-1">
-                            <span class="text-muted">
-                             Destination
-                            </span>
-                                <div>
-                                Tulip House, Mombasa Road, Nairobi, Kenya
-                                </div>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
         </div>
            
             `
@@ -974,7 +654,7 @@ function initMap() {
     addMarker({
         coords: { lat: -1.27576, lng: 36.834851 },
         iconImage: taxi_offline,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
+        content: `<p class="d-none">offline|identifier</p><h6 class="d-flex align-items-center">
         <div class="card mb-0">
             <div class="card-body p-0 mb-2">
                    <div class="d-flex">
@@ -1139,11 +819,19 @@ function initMap() {
                     $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
                 }
 
-                if (theGroup == "plate") {
+                if (theGroup == "active") {
+                    var theCanvas = new bootstrap.Offcanvas(offcanvasExample)
+                    theCanvas.show()                   
+                }
 
-                    $('#plate').removeClass('left-100').siblings().addClass('left-100');
-                    $('.main-map-container .ma-backdrop').removeClass('d-none');
-                    $(".content, .header").append('<div class="ma-backdrop" data-ma-action="aside-close" data-ma-target=' + e + " />");
+                if (theGroup == "inactive") {
+                    var theCanvas = new bootstrap.Offcanvas(inActive)
+                    theCanvas.show()                   
+                }
+
+                if (theGroup == "offline") {
+                    var theCanvas = new bootstrap.Offcanvas(offline)
+                    theCanvas.show()                   
                 }
 
                 if (theGroup == "plate-available") {
@@ -1224,8 +912,7 @@ function initMap() {
                 // this shows the more details
                 // alert('clicked');
 
-                var theCanvas = new bootstrap.Offcanvas(offcanvasExample)
-                theCanvas.show()
+              
 
 
 
