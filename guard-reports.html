@@ -425,14 +425,14 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                                <h4 class="mb-sm-0 font-size-18">Kelvin's Trips</h4>
+                                <h4 class="mb-sm-0 font-size-18">Kelvin's Daily Reports</h4>
 
                                 <div class="page-title-right">
                                     <ol class="breadcrumb m-0">
                                         <li class="breadcrumb-item"><a href="index.html">Dashboards</a></li>
-                                        <li class="breadcrumb-item"><a href="driver-list.html">Drivers</a></li>
-                                        <li class="breadcrumb-item"><a href="driver-details.html">Kelvin Njuguna</a></li>
-                                        <li class="breadcrumb-item active">March Trips</li>
+                                        <li class="breadcrumb-item"><a href="guards.html">Guards</a></li>
+                                        <li class="breadcrumb-item"><a href="guard-details.html">Kelvin Njuguna</a></li>
+                                        <li class="breadcrumb-item active">Kelvin Reports</li>
                                     </ol>
                                 </div>
 
@@ -479,27 +479,13 @@
                                 <div class="card-header bg-white boarder-bottom-1">
                                     <div class="row d-flex justify-content-between">
                                         <div class="col-6">
-                                            <h4 class="card-title mb-0"><span>March 2021</span> Trips</h4>
+                                            <h4 class="card-title mb-0"><span>13 Mar 2023</span> Reports</h4>
                                         </div>
 
                                         <div class="col-auto col-auto">
-                                            <div class="text-sm-end">
-                                                <select name='length_change' class="form-control selectpicker table-rows-selector show-tick btn btn-auto calendar-selecor" data-style="btn-success" data-live-search="true" title="Select a month">
-                                                    <option value='5'>Jan 2021</option>
-                                                    <option value='50' selected="true">Mar 2022</option>
-                                                    <option value='100'>Mar 2021</option>
-                                                    <option value='150'>Apr 2021</option>
-                                                    <option value='200'>May 2021</option>
-                                                    <option value='0'>Jun 2021</option>
-                                                    <option value='0'>Jul 2021</option>
-                                                    <option value='0'>Aug 2021</option>
-                                                    <option value='0'>Sep 2021</option>
-                                                    <option value='0'>Oct 2021</option>
-                                                    <option value='0'>Nov 2021</option>
-                                                    <option value='0'>Dec 2021</option>
-                                                    <option value='0'>Jan 2022</option>
-                                                    <option value='0'>Feb 2022</option>
-                                                </select>
+                                            <div class="col-md-10">
+                                                <input class="form-control" type="date" value="2023-03-13"
+                                                    id="example-date-input">
                                             </div>
                                         </div>
                                     </div>
@@ -514,66 +500,43 @@
                                         <thead class="table-dark">
                                             <tr>
                                                 <th>#</th>
-                                                <th>Client</th>
-                                                <th>Date</th>
-                                                <th>Trip</th>
-                                                <th>Order Qty.</th>
-                                                <th>Canceled By</th>
-                                                <th>Reason</th>
+                                                <th>Date & Time</th>
+                                                <th>Location</th>
+                                                <th>Activity</th>
+                                                <th>Shift</th>
+                                                <th>Steps</th>
                                                 <th></th>
                                             </tr>
                                         </thead>
                                         <tfoot class="table-light">
                                             <tr>
                                                 <th></th>
-                                                <th colspan="7">22 Trips</th>
+                                                <th colspan="">22 Times</th>
+                                                <th></th>
+                                                <th></th>
+                                                <th>6:00 AM - 6:00 PM</th>
+                                                <th>45,000 Steps</th>
+                                                <th></th>
                                             </tr>
                                         </tfoot>
                                         <tbody class="table-striped">
                                             <tr>
                                                 <td><strong>1.</strong></td>
                                                 <td>
-                                                    <a href="passenger-details.html" class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary text-uppercase">
-                                                                        <strong>KN</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <p class="mb-0">
-                                                                Kelvin Njuguna
-                                                            </p>
-                                                            <!-- passenger rating -->
-                                                            <div class="rating-star">
-                                                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3" />
-                                                            </div>
-                                                        </div>
-                                                    </a>
-
-
-
+                                                   07 Jan 2023 at 5:56 AM
                                                 </td>
 
                                                 <td>
-                                                    03 Mar 2022 11:23AM
+                                                    Moi Avenue Street
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0">
-                                                        <strong>From: </strong> 90 Degrees By Tsavo
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <strong>To: </strong> Tulip House, Mombasa Road
-                                                    </p>
+                                                    Logged In
                                                 </td>
-                                                <td>10,000 Li</td>
-                                                <td>The Driver</td>
-                                                <td>Driver took to long to move</td>
+                                                <td>6:00 AM - 6:00 PM</td>
+                                                <td>34 Steps</td>
 
                                                 <td>
-                                                    <div class="dropdown">
+                                                    <div class="dropdown d-none">
                                                         <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                                                             <i class="bx bx-dots-vertical-rounded"></i>
                                                         </a>
@@ -589,47 +552,20 @@
                                             <tr>
                                                 <td><strong>2.</strong></td>
                                                 <td>
-                                                    <a href="passenger-details.html" class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary text-uppercase">
-                                                                        <strong>KN</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <p class="mb-0">
-                                                                Kelvin Njuguna
-                                                            </p>
-                                                            <!-- passenger rating -->
-                                                            <div class="rating-star">
-                                                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3" />
-                                                            </div>
-                                                        </div>
-                                                    </a>
-
-
-
+                                                   07 Jan 2023 at 7:54 AM
                                                 </td>
 
                                                 <td>
-                                                    03 Mar 2022 11:23AM
+                                                    Moi Avenue Street
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0">
-                                                        <strong>From: </strong> 90 Degrees By Tsavo
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <strong>To: </strong> Tulip House, Mombasa Road
-                                                    </p>
+                                                    Scan Milestone code
                                                 </td>
-                                                <td>10,000 Li</td>
-                                                <td>The Client</td>
-                                                <td>Driver took to long to move</td>
+                                                <td>6:00 AM - 6:00 PM</td>
+                                                <td>304 Steps</td>
 
                                                 <td>
-                                                    <div class="dropdown">
+                                                    <div class="dropdown d-none">
                                                         <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                                                             <i class="bx bx-dots-vertical-rounded"></i>
                                                         </a>
@@ -645,47 +581,20 @@
                                             <tr>
                                                 <td><strong>3.</strong></td>
                                                 <td>
-                                                    <a href="passenger-details.html" class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary text-uppercase">
-                                                                        <strong>KN</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <p class="mb-0">
-                                                                Kelvin Njuguna
-                                                            </p>
-                                                            <!-- passenger rating -->
-                                                            <div class="rating-star">
-                                                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3" />
-                                                            </div>
-                                                        </div>
-                                                    </a>
-
-
-
+                                                   07 Jan 2023 at 11:45 AM
                                                 </td>
 
                                                 <td>
-                                                    03 Mar 2022 11:23AM
+                                                    Moi Avenue Street
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0">
-                                                        <strong>From: </strong> 90 Degrees By Tsavo
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <strong>To: </strong> Tulip House, Mombasa Road
-                                                    </p>
+                                                    scan Milestone Codes
                                                 </td>
-                                                <td>10,000 Li</td>
-                                                <td>The Client</td>
-                                                <td>Driver took to long to move</td>
+                                                <td>6:00 AM - 6:00 PM</td>
+                                                <td>1907 Steps</td>
 
                                                 <td>
-                                                    <div class="dropdown">
+                                                    <div class="dropdown d-none">
                                                         <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                                                             <i class="bx bx-dots-vertical-rounded"></i>
                                                         </a>
@@ -701,47 +610,20 @@
                                             <tr>
                                                 <td><strong>4.</strong></td>
                                                 <td>
-                                                    <a href="passenger-details.html" class="d-flex align-items-center">
-                                                        <div class="flex-shrink-0 me-3">
-                                                            <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary text-uppercase">
-                                                                        <strong>KN</strong>
-                                                                    </span>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="flex-grow-1">
-                                                            <p class="mb-0">
-                                                                Kelvin Njuguna
-                                                            </p>
-                                                            <!-- passenger rating -->
-                                                            <div class="rating-star">
-                                                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3" />
-                                                            </div>
-                                                        </div>
-                                                    </a>
-
-
-
+                                                   07 Jan 2023 at 01:56 PM
                                                 </td>
 
                                                 <td>
-                                                    03 Mar 2022 11:23AM
+                                                    Moi Avenue Street
                                                 </td>
                                                 <td>
-                                                    <p class="mb-0">
-                                                        <strong>From: </strong> 90 Degrees By Tsavo
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <strong>To: </strong> Tulip House, Mombasa Road
-                                                    </p>
+                                                    Scanning of Milestone Codes
                                                 </td>
-                                                <td>10,000 Li</td>
-                                                <td>The Client</td>
-                                                <td>Driver took to long to move</td>
+                                                <td>6:00 AM - 6:00 PM</td>
+                                                <td>9034 Steps</td>
 
                                                 <td>
-                                                    <div class="dropdown">
+                                                    <div class="dropdown d-none">
                                                         <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                                                             <i class="bx bx-dots-vertical-rounded"></i>
                                                         </a>
@@ -754,6 +636,8 @@
                                                     </div>
                                                 </td>
                                             </tr>
+                                            
+                                           
 
                                         </tbody>
                                     </table>
