@@ -150,7 +150,7 @@ function initMap() {
     //offline taxi
     var taxi_offline = {
         url: "assets/images/map-assets/offline-taxi.svg", // url
-        scaledSize: new google.maps.Size(45, 45), // scaled size
+        scaledSize: new google.maps.Size(20, 20), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
     }
@@ -166,7 +166,7 @@ function initMap() {
     //Booked taxis
     var taxi_booked = {
         url: "assets/images/map-assets/booked-taxi.svg", // url
-        scaledSize: new google.maps.Size(45, 45), // scaled size
+        scaledSize: new google.maps.Size(20, 20), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
     }
@@ -182,7 +182,7 @@ function initMap() {
     //taxi incident
     var taxi_incident = {
         url: "assets/images/map-assets/warning-taxi.svg", // url
-        scaledSize: new google.maps.Size(45, 45), // scaled size
+        scaledSize: new google.maps.Size(20, 20), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
     }
@@ -360,7 +360,7 @@ function initMap() {
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
                    </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                   <p class="text-truncate mb-0 text-uppercase">Lawrence Rise</p>
                </div>
 
                <div class="font-size-11 text-right">
@@ -436,7 +436,7 @@ function initMap() {
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
                    </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                   <p class="text-truncate mb-0 text-uppercase">Cleo House</p>
                </div>
 
                <div class="font-size-11 text-right">
@@ -511,7 +511,7 @@ function initMap() {
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
                    </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                   <p class="text-truncate mb-0 text-uppercase">Dan Deal Stores</p>
                </div>
 
                <div class="font-size-11 text-right">
@@ -587,11 +587,11 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">New Rise Appartments</p>
                    </div>
 
                    <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-success align-middle me-1"></i> Booked</p>
+                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-success align-middle me-1"></i> Active</p>
                         <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 20 Min</p>
                    </div>
                    </div>
@@ -662,7 +662,7 @@ function initMap() {
                             <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                         </div>
                    </h5>
-                   <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                   <p class="text-truncate mb-0 text-uppercase">Airport View House</p>
                </div>
 
                <div class="font-size-11 text-right">
@@ -766,11 +766,11 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">The Palace Place</p>
                    </div>
 
                    <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-danger align-middle me-1"></i> Car broke down</p>
+                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-danger align-middle me-1"></i> Inactive</p>
                         <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last seen at 12:23 AM</p>
                    </div>
                    </div>
@@ -794,53 +794,7 @@ function initMap() {
             `
     });
 
-    //available taxis
-    addMarker({
-        coords: { lat: -1.29948, lng: 36.8151453 },
-        iconImage: taxi_available,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-            <div class="card-body p-0 mb-2">
-                   <div class="d-flex">
-                 
-                   <div class="flex-shrink-0 align-self-center me-3">
-                       <img src="assets/images/users/avatar-4.jpg" class="rounded-circle avatar-xs" alt="">
-                   </div>
-                   
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Alex Wanjala
-                        <div class="rating-star">
-                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                            </div>
-                       </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
-                   </div>
-
-                   <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i> Available for Booking</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last seen at 12:23 AM</p>
-                   </div>
-                   </div>
-            </div>
-
-            <div class="card-body bg-light d-flex p-1>  
-                <p class="mb-0">  
-                    <i class="mdi mdi-map-marker text-info align-middle me-1 font-18px"></i>             
-                </p>
-            <div>
-            <p class="text-muted mb-0">Current Location</p>                         
-            <p class="mb-0">                
-            <span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya
-            </p>
-           </div>
-            </div>
-
-           
-        </div>
-           
-            `
-    });
+    
 
     //incidents
 
@@ -854,53 +808,7 @@ function initMap() {
     //         <strong class="text-info">20 Min Ago</strong>`
     // });
 
-    //available Taxis
-    addMarker({
-        coords: { lat: -1.294219, lng: 36.806824 },
-        iconImage: taxi_available,
-        content: `<p class="d-none">application|identifier</p><h6 class="d-flex align-items-center">
-        <div class="card mb-0">
-            <div class="card-body p-0 mb-2">
-                   <div class="d-flex">
-                 
-                   <div class="flex-shrink-0 align-self-center me-3">
-                       <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-xs" alt="">
-                   </div>
-                   
-                   <div class="flex-grow-1 overflow-hidden pe-5">
-                       <h5 class="text-truncate font-size-14 mb-1 text-capitalize">
-                       Alex Wanjala
-                        <div class="rating-star">
-                                <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
-                            </div>
-                       </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
-                   </div>
-
-                   <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-primary align-middle me-1"></i> Available for Booking</p>
-                        <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> Last seen at 12:23 AM</p>
-                   </div>
-                   </div>
-            </div>
-
-            <div class="card-body bg-light d-flex p-1>  
-                <p class="mb-0">  
-                    <i class="mdi mdi-map-marker text-info align-middle me-1 font-18px"></i>             
-                </p>
-            <div>
-            <p class="text-muted mb-0">Current Location</p>                         
-            <p class="mb-0">                
-            <span class="the-clicked-address"></span> Nairobi hospital, Ngong Road, Nairobi, Kenya
-            </p>
-           </div>
-            </div>
-
-           
-        </div>
-           
-            `
-    });
+    
 
     //booked taxi
     addMarker({
@@ -922,11 +830,11 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">Big Ben</p>
                    </div>
 
                    <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-success align-middle me-1"></i> Booked</p>
+                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-success align-middle me-1"></i> Active</p>
                         <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 20 Min</p>
                    </div>
                    </div>
@@ -999,11 +907,11 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">Levetot Holdings</p>
                    </div>
 
                    <div class="font-size-11 text-right">
-                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-success align-middle me-1"></i> Booked</p>
+                        <p class="text-muted mb-2"><i class="mdi mdi-circle text-success align-middle me-1"></i> Active</p>
                         <p class="text-muted mb-0"><i class="mdi mdi-clock text-muted align-middle me-1"></i> ETA 20 Min</p>
                    </div>
                    </div>
@@ -1082,7 +990,7 @@ function initMap() {
                                 <input type="hidden" class="rating" data-filled="mdi mdi-star text-warning" data-empty="mdi mdi-star-outline text-muted" data-readonly value="3.5" />
                             </div>
                        </h5>
-                       <p class="text-truncate mb-0 text-uppercase">KAB 123P</p>
+                       <p class="text-truncate mb-0 text-uppercase">St Andrews Tower</p>
                    </div>
 
                    <div class="font-size-11 text-right">
