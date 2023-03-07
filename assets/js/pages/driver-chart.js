@@ -152,7 +152,7 @@ var options = {
 chart.render();
 
 var options = {
-        series: [{ name: "Collections", data: [12338, 2581, 42585, 39876, 623695, 45897, 52541, 32142, 44580, 22568, 35471, 23206] }
+        series: [{ name: "Steps", data: [12338, 2581, 42585, 39876, 623695, 45897, 52541, 32142, 44580, 22568, 35471, 23206] }
 
         ],
         chart: { height: 350, type: "area", toolbar: { show: !1 } },
@@ -172,13 +172,13 @@ var options = {
 
             },
             title: {
-                text: "Amount in KES",
+                text: "Steps Taken",
             }
         },
         tooltip: {
             y: {
                 formatter: function(value, { series, seriesIndex, dataPointIndex, w }) {
-                    return "KES " + numeral(value).format('0,0')
+                    return "" + numeral(value).format('0,0')+" Steps"
 
                 }
             }
