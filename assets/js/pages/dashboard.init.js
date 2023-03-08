@@ -39,20 +39,20 @@ var options = {
 
             },
             title: {
-                text: "Trips",
+                text: "Steps",
             }
         },
         series: [{
-            name: "Fullfiled Orders",
+            name: "This Week",
             data: [12, 36, 12, 45, 568, 14, 562, ]
         }, {
-            name: "Canceled Orders",
+            name: "Last Week",
             data: [124, 12, 256, 256, 256, 24, 23]
         }],
         xaxis: {
             categories: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
         },
-        colors: ["#556ee6", "#f46a6a"],
+        colors: ["#556ee6", "#c6ccf6"],
         legend: {
             position: "bottom"
         },
@@ -77,7 +77,7 @@ var options = {
         tooltip: {
             y: {
                 formatter: function(value, { series, seriesIndex, dataPointIndex, w }) {
-                    return numeral(value).format('0,0') + " Liters"
+                    return numeral(value).format('0,0') + " Steps"
 
                 }
             }
