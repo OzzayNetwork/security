@@ -150,7 +150,7 @@ function initMap() {
     //offline taxi
     var taxi_offline = {
         url: "assets/images/map-assets/offline-taxi.svg", // url
-        scaledSize: new google.maps.Size(20, 20), // scaled size
+        scaledSize: new google.maps.Size(45, 45), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
     }
@@ -166,7 +166,7 @@ function initMap() {
     //Booked taxis
     var taxi_booked = {
         url: "assets/images/map-assets/booked-taxi.svg", // url
-        scaledSize: new google.maps.Size(20, 20), // scaled size
+        scaledSize: new google.maps.Size(45, 45), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
     }
@@ -182,7 +182,7 @@ function initMap() {
     //taxi incident
     var taxi_incident = {
         url: "assets/images/map-assets/warning-taxi.svg", // url
-        scaledSize: new google.maps.Size(20, 20), // scaled size
+        scaledSize: new google.maps.Size(45, 45), // scaled size
         origin: new google.maps.Point(0, 0), // origin
         anchor: new google.maps.Point(0, 0) // anchor
     }
