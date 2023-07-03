@@ -331,6 +331,33 @@
                     <div class="row">
                         <div class="col-12">
                             <div class="card">
+                                <div class="card-header bg-white pt-0 pr-0 p-0 d-flex justify-content-between align-items-center w-100 border-bottom">
+
+                                    <div class="btn-toolbar p-3 d-flex justify-content-between align-items-center w-100" role="toolbar">
+                                        <h4 class="card-title text-capitalize mb-0 ">
+                                            All Incidences for March 2023
+                                        </h4>
+
+                                        <div class="d-flex">
+                                            <select class="form-control selectpicker w-auto  show-tick" data-style="btn btn-primary waves-light waves-effect month-picker" data-live-search="true" title="Select A month">
+                                                <option value="" selected>Mar 2022</option>
+                                                <option value="">Feb 2022</option>
+                                                <option value="">Jan 2022</option>
+                                                <option value="">Dec 2021</option>
+                                                <option value="">Nov 2021</option>
+                                                <option value="">Sep 2021</option>
+                                                <option value="">Oct 2021</option>
+                                          </select>
+
+
+                                        </div>
+
+
+                                    </div>
+                                    <div class="btn-toolbar p-3 align-items-center d-non animated delete-tool-bar" role="toolbar">
+                                        <button type="button" data-toggle="modal" data-target="#new-incident" class="btn btn-primary waves-effect btn-label waves-light me-3 text-nowrap"><i class="dripicons-plus label-icon"></i> Report Incident</button>
+                                    </div>
+                                </div>
 
                                 <div class="card-body">
 
@@ -341,12 +368,11 @@
                                         <thead class="table-dark">
                                             <tr>
                                                 <th>Guard</th>
-                                                <th>Contacts</th>
-                                                <th>Gender</th>
-                                                <th>Status</th>
-                                                <th>Sign In Time</th>
-                                                <th>Hours Worked</th>
-                                                <th>Sign Out Time</th>
+                                                <th>Date</th>
+                                                <th>Incident Type</th>
+                                                <th>Description</th>
+                                                <th>Ob Number</th>
+                                                
                                                 <th></th>
                                             </tr>
                                         </thead>
@@ -377,31 +403,23 @@
                                                 </td>
 
                                                 <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
+                                                   i0 Mar 2023 10:12 AM
                                                 </td>
                                                 <td>
-                                                    Male
+                                                    Crime
                                                 </td>
 
                                               
                                                 <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
+                                                    Caught a thief trying to steal items from the property
                                                 </td>
+                                                
                                                 <td class="">
-                                                    12 May 2023 06:45 AM
-                                                </td>
-                                                <td>12 Hours</td>
-                                                <td class="">
-                                                    13 May 2023 06:00 AM
+                                                    12345
                                                 </td>
                                                 
                                                 <td>
-                                                    <div class="dropdown">
+                                                    <div class="dropdown d-none">
                                                         <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                                                             <i class="bx bx-dots-vertical-rounded"></i>
                                                         </a>
@@ -418,13 +436,19 @@
                                             <tr>
                                                 <td>
                                                     <a href="guard-details.html" class="d-flex align-items-center">
-                                                        <img src="assets/images/users/avatar-3.jpg" class="me-3 rounded-circle avatar-xs" alt="user-pic">
+                                                        <div class="flex-shrink-0 me-3">
+                                                            <div class="avatar-xs">
+                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary text-uppercase">
+                                                                        <strong>KN</strong>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
 
                                                         <div class="flex-grow-1">
                                                             <p class="mb-0">
                                                                 Kelvin Njuguna
                                                             </p>
-                                                            
+                                                           
                                                         </div>
                                                     </a>
 
@@ -433,31 +457,23 @@
                                                 </td>
 
                                                 <td>
-                                                    <p class="mb-0">
-                                                        <a href="mailto:mushemaaust244@gmail.com">mushemaaust244@gmail.com</a>
-                                                    </p>
-                                                    <p class="mb-0">
-                                                        <a href="tel:0704524883">0704 524 883</a>
-                                                    </p>
+                                                   i0 Mar 2023 10:12 AM
                                                 </td>
                                                 <td>
-                                                    Male
+                                                    Crime
                                                 </td>
 
-                                               
+                                              
                                                 <td>
-                                                    <span class="badge badge-pill badge-soft-success font-size-11">Active</span>
+                                                    Caught a thief trying to steal items from the property
                                                 </td>
+                                                
                                                 <td class="">
-                                                    12 May 2023 06:45 AM
+                                                    12345
                                                 </td>
-                                                <td>11 Hrs 31 Min</td>
-                                                <td class="">
-                                                    13 May 2023 06:56 AM
-                                                </td>
-                                               
+                                                
                                                 <td>
-                                                    <div class="dropdown">
+                                                    <div class="dropdown d-none">
                                                         <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
                                                             <i class="bx bx-dots-vertical-rounded"></i>
                                                         </a>
@@ -470,6 +486,116 @@
                                                     </div>
                                                 </td>
                                             </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <a href="guard-details.html" class="d-flex align-items-center">
+                                                        <div class="flex-shrink-0 me-3">
+                                                            <div class="avatar-xs">
+                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary text-uppercase">
+                                                                        <strong>KN</strong>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="flex-grow-1">
+                                                            <p class="mb-0">
+                                                                Kelvin Njuguna
+                                                            </p>
+                                                           
+                                                        </div>
+                                                    </a>
+
+
+
+                                                </td>
+
+                                                <td>
+                                                   i0 Mar 2023 10:12 AM
+                                                </td>
+                                                <td>
+                                                    Crime
+                                                </td>
+
+                                              
+                                                <td>
+                                                    Caught a thief trying to steal items from the property
+                                                </td>
+                                                
+                                                <td class="">
+                                                    12345
+                                                </td>
+                                                
+                                                <td>
+                                                    <div class="dropdown d-none">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="guard-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-block-helper me-3"></i>Deactivate account</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>
+                                                    <a href="guard-details.html" class="d-flex align-items-center">
+                                                        <div class="flex-shrink-0 me-3">
+                                                            <div class="avatar-xs">
+                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary text-uppercase">
+                                                                        <strong>KN</strong>
+                                                                    </span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="flex-grow-1">
+                                                            <p class="mb-0">
+                                                                Kelvin Njuguna
+                                                            </p>
+                                                           
+                                                        </div>
+                                                    </a>
+
+
+
+                                                </td>
+
+                                                <td>
+                                                   i0 Mar 2023 10:12 AM
+                                                </td>
+                                                <td>
+                                                    Crime
+                                                </td>
+
+                                              
+                                                <td>
+                                                    Caught a thief trying to steal items from the property
+                                                </td>
+                                                
+                                                <td class="">
+                                                    12345
+                                                </td>
+                                                
+                                                <td>
+                                                    <div class="dropdown d-none">
+                                                        <a class="text-muted font-size-16" role="button" data-bs-toggle="dropdown" aria-haspopup="true">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+
+                                                        <div class="dropdown-menu dropdown-menu-end">
+                                                            <a class="dropdown-item" href="guard-details.html"><i class="font-size-15 mdi mdi-eye-plus-outline me-3"></i>Details</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-printer me-3"></i>Print</a>
+                                                            <a class="dropdown-item" href="#"><i class="font-size-15 mdi mdi-block-helper me-3"></i>Deactivate account</a>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                           
                                         </tbody>
                                     </table>
                                 </div>
@@ -690,6 +816,77 @@
 
     </div>
     <!-- END layout-wrapper -->
+
+    <!-- modals -->
+    <div class="modal fade" id="new-incident" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Report Incident</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="row">
+                <div class="col-12">
+                    <div class="form-group mb-3">
+                        <label for="">Guard Involved</label>
+                        <select class="form-control selectpicker bg-white select-revenue form-control-sm" title="Select Guard" data-live-search="true">
+                            <option value="James Akinyi">James Akinyi</option>
+                            <option value="Grace Chege">Grace Chege</option>
+                            <option value="Kevin Amondi">Kevin Amondi</option>
+                            <option value="Lucy Kamau">Lucy Kamau</option>
+                            <option value="John Mumbi">John Mumbi</option>
+                            <option value="Jane Mwangi">Jane Mwangi</option>
+                            <option value="Faith Hassan">Faith Hassan</option>
+                            <option value="Ephantus Baraka">Ephantus Baraka</option>
+                            <option value="Leah Ayub">Leah Ayub</option>
+                            <option value="Chepkemoi Damaris">Chepkemoi Damaris</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="col-12 mb-3">
+                    <siv class="form-group mb-3">
+                        <label for="">Incident Type</label>
+                        <select class="form-control selectpicker bg-white select-revenue form-control-sm" title="Select Incident type">
+                            <option value="Crime">Crime</option>
+                            <option value="Assault">Assault</option>
+                            <option value="forgery  ">forgery  </option>
+                           
+                      </select>
+                    </siv>
+                </div>
+                <div class="col-12 mb-3">
+                    <siv class="form-group mb-3">
+                        <label for="">Date Of Incident</label>
+                        <input class="form-control" type="datetime-local" value="2019-08-19T13:45:00" id="example-datetime-local-input">
+                    </siv>
+                </div>
+
+                <div class="col-12 mb-3">
+                    <siv class="form-group mb-3">
+                        <label for="">OB Number </label>
+                        <input type="text" placeholder="Enter OB Number" class="form-control">
+                    </siv>
+                </div>
+
+                <div class="col-12 mb-3">
+                    <siv class="form-group mb-3">
+                        <label for="">Incident description</label>
+                        <textarea class="form-control" rows="" cols="" placeholder="Start Typing"></textarea>
+                    </siv>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-- end of modals -->
 
 
 
